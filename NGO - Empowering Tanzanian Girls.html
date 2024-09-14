@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO - Empowering Tanzanian Girls</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="hero-image">
+            <h1>BINTI HATUA FOUNDATION</h1>
+            <p>Is Comunity based foundation. A Non-governmental organization that aim to improve the livehood of the communities
+through the provision of education, healthservices, economic empowerment as well as promotion of human rights. This
+Foundation is aimed to wards the road of fullfillment of girls and of one's dreams.
+Our primary purposes is for every youth to have an opportunity to succeed in life and live up their potentials. The
+Foundation will offers supports and skills to youth so as to improve their performance to become the person to be. We are
+coming from the society which most problems are influenced by poverty and financial dependence, hence we will fight to
+engulf the cycle of poverty.</p>
+            <div class="cta-buttons">
+                <a href="#get-involved" class="btn">Get Involved</a>
+                
+            </div>
+        </div>
+    </header>
+
+    <main> 
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>We are a non-governmental organization that aims to improve the livelihoods of communities through the provision of education, health services, economic empowerment, and the promotion of human rights. Our foundation is dedicated to fulfilling the dreams of girls and empowering them to achieve their full potential.</p>
+            <h3>Vision</h3>
+            <p>A Tanzanian society where gender equality and inclusive economic growth are the norm.</p>
+            <h3>Mission</h3>
+            <p> 1. To foster economic independence and ensure access to resources, creating a society free from all forms of violence.</p>
+              
+             <p> 2. To make sure that, the society observe human rights regardless of their gender and age.
+<br>3. To break the cycle of poverty and create economic opportunities to youth.
+<br>4. To create a society for youth to have to choose and create opportunities for themselves.</p>
+        </section>
+
+        <section id="programs">
+            <h2>Our Programs</h2>
+            <ul>
+                <li>Sexual Reproductive Health Education</li>
+                <li>Leadership Training</li>
+            </ul>
+        </section>
+
+        <section id="news">
+            <h2>News & Updates</h2>
+            </section>
+
+        <section id="get-involved">
+            <h2>Get Involved</h2>
+            <h3>Volunteer</h3>
+            <p>Opportunities to contribute time and skills.</p>
+            <h3>Donate</h3>
+            <p>Make a secure donation. Choose between a one-time or recurring donation.</p>
+            <a href="#donate" class="btn">Donate Now</a>
+        </section>
+    </main>
+
+    <div class="aside">
+        <h3 class="aside__heading">At a glance</h3>
+        <ul class="aside__list">
+            <li>
+                <span class="aside__list__heading">Country:</span>
+                <p>Tanzania</p>
+            </li>
+            <li>
+                <span class="aside__list__heading">Active in:</span>
+                <p>Tanzania</p>
+            </li>
+            <li>
+                <span class="aside__list__heading">Type:</span>
+                <p>National NGO</p>
+            </li>
+            <li>
+                <span class="aside__list__heading">Size:</span>
+                <p>1-10</p>
+            </li>
+            <li>
+                <span class="aside__list__heading">Joined:</span>
+                <p>20 May 2020</p>
+            </li>
+            <li>
+                <span class="aside__list__heading">Main areas of work:</span>
+                <p>Human Rights & Justice</p>
+            </li>
+            <li>
+                <span class="aside__list__heading">Theory of change strategy:</span>
+                <p>
+                    <span>Advancing girls' rights and leadership,</span>
+                    <span>Mobilise families and communities,</span>
+                    <span>Establish and implement laws and policies</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+<div class="container">
+      <div class="text">
+         Contact us
+      </div>
+      <form action="#">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">First Name</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Last Name</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Email Address</label>
+            </div>
+           
+             
+         </div>
+         <div class="form-row">
+         <div class="input-data textarea">
+            <textarea rows="8" cols="80" required></textarea>
+            <br />
+            <div class="underline"></div>
+            <label for="">Write your message</label>
+            <br />
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" value="submit">
+               </div>
+            </div>
+      </form>
+      </div>
+                      
+                      
+                      
+                      
+                      
+                      
+    <footer>
+        <div class="footer-content">
+            <div>
+                <a href="#about-us">About Us</a>
+                <a href="#programs">Programs</a>
+            </div>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="legal-info">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Thank you for reaching out! Your message has been submitted successfully.');
+                this.submit(); 
+            } else {
+                alert('Please fill out all fields before submitting.');
+            }
+        });
+    </script>
+</body>
+</html>
